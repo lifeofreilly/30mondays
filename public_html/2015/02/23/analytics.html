@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script language="JavaScript" type="text/javascript" src="./VisitorAPI.js"></script>
+        <script language="JavaScript" type="text/javascript" src="./AppMeasurement.js"></script>
+    </head>
+    <body>
+        <script language="JavaScript" type="text/javascript"><!--
+        /* You may give each page an identifying name, server, and channel on
+        the next lines. */
+        s.pageName="Implement Analytics"
+        s.server=""
+        s.channel=""
+        s.pageType=""
+        s.prop1=""
+        s.prop2=""
+        s.prop3=""
+        s.prop4=""
+        s.prop5=""
+        /* Conversion Variables */
+        s.campaign=""
+        s.state=""
+        s.zip=""
+        s.events=""
+        s.products=""
+        s.purchaseID=""
+        s.eVar1=""
+        s.eVar2=""
+        s.eVar3=""
+        s.eVar4=""
+        s.eVar5=""
+        var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+
+        <h2>How to implement a website for Adobe Analytics</h2>
+        <p>Note: This configuration is for the legacy javascript implementation. If you have a company enabled for IMS consider using DTM (dynamic tag management). This implementation is sufficient for basic tracking.</p>
+
+        <ol>
+            <li>Identify the Marketing Cloud company and website you will use. You will need to be an admin of the Marketing Cloud company, and have write access to the webserver hosting your site.</li>
+            <li>Navigate to https://my.omniture.com > Admin > Code Manager, and download the 'JavaScript (new)' package. You will only need AppMeasurement.js and VisitorAPI.js</li>
+            <li>On the same page, locate your rsid, namespace, and analytics server url, using the legacy code manager tool at the bottom of the page.</li>
+            <li>To instrument your website, follow the JavaScript Implementation instructions in the <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/index.html">Adobe Analytics Implementation</a> guide (page 13).</li>
+            <li>Upload the new files and changes to your webserver.</li>
+            <li>Navigate to your website and verify that data is being sent by using the <a href="https://helpx.adobe.com/analytics/using/digitalpulse-debugger.html">Digitalpulse Debugger</a></li>
+            <li>Perform a number of GET requests on a page that you have instrumented. Verify that results are captured in the report View All Reports > Site Metrics > Page Views. If you have access enable to the real-time data feature set Include Current Data: Yes. Even with real-time enabled you may have to wait 15min for results.</li>
+        </ol>
+        <p>The implementation code for this website can be seen at <a href="https://github.com/lifeofreilly/30mondays">30mondays</a> or by viewing the source</p>
+        <img src="./hourly.jpg" alt="Page Views for 30mondays.com">
+        <img src="./debugger.jpg" alt="Page Views for 30mondays.com">
+    </body>
+</html>
+
