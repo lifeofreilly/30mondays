@@ -15,14 +15,15 @@ s.linkLeaveQueryString=false
 s.linkTrackVars="None"
 s.linkTrackEvents="None"
 /* uncomment below to use doPlugins */
-/* s.usePlugins=true
+s.usePlugins=true
 function s_doPlugins(s) {
+	s.campaign = s.Util.getQueryParam("adbsc"); // added to capture campaign data
 // use implementation plug-ins that are defined below
 // in this section. For example, if you copied the append
 // list plug-in code below, you could call:
 // s.events=s.apl(s.events,"event1",",",1);
 }
-s.doPlugins=s_doPlugins */
+s.doPlugins=s_doPlugins
 /* WARNING: Changing any of the below variables will cause drastic
 changes to how your visitor data is collected. Changes should only be
 made when instructed to do so by your account manager.*/
