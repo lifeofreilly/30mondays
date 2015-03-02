@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script language="JavaScript" type="text/javascript" src="http://30mondays.com/VisitorAPI.js"></script>
+        <script language="JavaScript" type="text/javascript" src="http://30mondays.com/AppMeasurement.js"></script>
+    </head>
+    <body>
+        <script language="JavaScript" type="text/javascript"><!--
+        /* You may give each page an identifying name, server, and channel on
+        the next lines. */
+        s.pageName="Implement Social Analytics"
+        s.server=""
+        s.channel=""
+        s.pageType=""
+        s.prop1=""
+        s.prop2=""
+        s.prop3=""
+        s.prop4=""
+        s.prop5=""
+        /* Conversion Variables */
+        s.campaign=""
+        s.state=""
+        s.zip=""
+        s.events=""
+        s.products=""
+        s.purchaseID=""
+        s.eVar1=""
+        s.eVar2=""
+        s.eVar3=""
+        s.eVar4=""
+        s.eVar5=""
+        var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+
+        <h2>How to implement a website for Social Analytics</h2>
+        <ol>
+            <li>Verify that your report suite is enabled for social.</li>
+            <li>Add the getQueryParam to capture the tracking code (<a href="https://github.com/lifeofreilly/30mondays/commit/b134ac9d6c0ab0778777bd08b0a17447aca54864#diff-6a394c2ba4e29ef28ed670b913475aa8">example</a>) </li>
+            <li>Verify that the campaign tracking code matches the tracking code configured for your report suite. You can verify this in Dr. Teeth > Report Suites Enabler For Social [0]</li>
+            <li>To verify, publish a shortened link to your Facebook or Twitter property using the Adobe Social Publisher (<a href="https://www.facebook.com/30mondays/posts/1543028439319630">example</a>)</li>
+            <li>Notice the parameters included in the shortened link e.g. http://30mondays.com/<b>?adbsc=social_20150227_41268356&adbid=1543028439319630&adbpl=fb&adbpr=1541988592756948</b></li>
+            <li>Wait 12hrs to ensure that data collection has completed and verify that data is being collected by generating a report at: https://sc.omniture.com > View All Reports > Social > Social Variables > Social Platforms. Remove the Mentions metric from the reports and add the metric Standard > Page Views. [1]</li>
+            <li>You can further drill down into the data by performing a Breakdown on Social > Owned Post IDs > Post Text [2]</li>
+        </ol>
+        <p>The implementation code for this website can be seen at <a href="https://github.com/lifeofreilly/30mondays">30mondays</a> or by viewing the source</p>
+        <p>[0]</p><img src="./tracking.jpg" alt="Tracking Code Param">
+        <p>[1]</p><img src="./pageviews.jpg" alt="Page view by Social Platform">
+        <p>[2]</p><img src="./breakdown.jpg" alt="Page view breakdown">
+    </body>
+</html>
+
