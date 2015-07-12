@@ -1,0 +1,123 @@
+html {
+    /* Controls the size of the font for the entire document */
+    font-size: 2.5vw;
+}
+
+body {
+    font-family: 'Old Standard TT', serif;
+    background-color: rgb(225, 214, 194);
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+p {
+    text-indent: 0.7rem;
+}
+
+p.firstparagraph {
+    text-indent: 0rem;
+}
+
+div.poem p {
+    text-align: center;
+}
+
+#playbill {
+    text-align: center;
+    font-size: 0.85rem;
+    line-height: 1.5rem;
+}
+
+span.firstcharacter {
+    text-indent: 0;
+    float: left;
+    color: #650020;
+    font-size: 5rem;
+    line-height: 3.7rem;
+    padding-top: 0.5rem;
+    padding-right: 0.1rem;
+}
+
+span.firstmark {
+    letter-spacing: -0.4rem;
+}
+
+span.nextchapter {
+    color: #650020;
+}
+
+p.quote {
+    text-indent: 0;
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 2.2rem;
+    line-height: 1.2em;
+    text-transform: uppercase;
+}
+
+h1.title {
+    letter-spacing: 0.1rem;
+}
+
+blockquote p {
+    font-size: 0.85rem;
+    text-indent: 0;
+}
+
+h2 {
+
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.2em;
+    text-transform: uppercase;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 400;
+}
+
+h4 {
+    text-align: right;
+}
+
+h5 {
+    text-align: center;
+    font-weight: 500;
+}
+
+hr.mini-rule {
+    width: 10%;
+    text-align: center;
+}
+
+#toc {
+    list-style-type: none;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    text-indent: 0;
+    text-align: center;
+}
+
+#footer {
+    text-align: center;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+
+}
