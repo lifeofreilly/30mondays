@@ -3,7 +3,7 @@ html {
     font-size: 2.5vw;
 }
 
-@media screen and (max-width: 667px) {
+@media screen and (max-width: 768px) {
     html {
         /* Controls the size of the font for the entire document */
         font-size: 4.5vw;
