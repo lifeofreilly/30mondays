@@ -1,7 +1,9 @@
 html {
     /* Controls the size of the font for the entire document */
     font-size: 2.5vw;
+    font-size: -moz-calc(42px + 1vw);
     font-size: -webkit-calc(14px + 1vw);
+
 }
 
 @media screen and (max-device-width: 768px) {
@@ -67,6 +69,8 @@ img {
     padding: 0;
     width: 100%;
     max-width: 500px;
+    max-width: -moz-calc(1500px + 0rem);
+
 }
 
 h1 {
