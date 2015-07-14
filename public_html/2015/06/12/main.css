@@ -1,6 +1,6 @@
 html {
     /* Controls the size of the font for the entire document */
-    /* font-size: 2.5vw; */
+    font-size: 2.5vw;
     font-size: -webkit-calc(14px + 1vw);
 }
 
